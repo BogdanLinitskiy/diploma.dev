@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class ClientsController extends Controller
 {
-    public function checkRegistration(){
+    public function checkLogin(){
 
     }
 }

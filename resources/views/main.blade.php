@@ -4,7 +4,7 @@
     @foreach($categories as $category)
         <div class="col-md-4">
             <p>{{$category['name']}}</p>
-            <a href="/{{$category['alias']}}">
+            <a href="/categories/{{$category['alias']}}">
                 <img width="150px" height="150px" src="{{$category['logo']}}">
             </a>
         </div>

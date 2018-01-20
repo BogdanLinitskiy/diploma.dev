@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class PerformersController extends Controller
 {
-    public function checkRegistration(){
+    public function checkLogin(){
 
     }
 }
