@@ -14,19 +14,24 @@ class CategoriesController extends Controller
                 return view('IT.show',$data);
             break;
             case 'Marketing':
-                return view('Marketing.show');
+                $data['marketing'] = SubIT::all();
+                return view('marketing.show',$data);
             break;
             case 'VideoNAnimation':
-                return view('Marketing.show');
+                $data['videoAnimation'] = SubIT::all();
+                return view('video_and_animation.show',$data);
                 break;
             case 'Design':
-                return view('Marketing.show');
+                $data['design'] = SubIT::all();
+                return view('design.show',$data);
                 break;
             case 'FunNLifestyle':
-                return view('Marketing.show');
+                $data['funLifestyle'] = SubIT::all();
+                return view('fun_and_lifestyle.show',$data);
                 break;
-            case 'business':
-                return view('Marketing.show');
+            case 'Business':
+                $data['business'] = SubIT::all();
+                return view('business.show',$data);
                 break;
         }
     }
