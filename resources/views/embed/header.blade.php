@@ -18,7 +18,6 @@
             <li class="nav-item">
                 <a class="nav-link" href="/pages/show">Show pages</a>
             </li>
-
         </ul>
     </div>
 </nav>

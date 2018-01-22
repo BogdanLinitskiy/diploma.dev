@@ -17,18 +17,16 @@
 <body>
 
 @include('embed.header')
-
 <main role="main">
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     @yield('jumbotron')
-
+    @yield('subCategory')
     <div class="container">
         <!-- Example row of columns -->
         <div class="row">
-            @yield('subCategory')
-            @yield('content')
 
+            @yield('content')
         </div>
 
         <hr>

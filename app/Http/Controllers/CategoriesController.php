@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class CategoriesController extends Controller
 {
-    public function category($name){
+    public function show($name){
         switch ($name){
             case 'IT':
                 $data['IT'] = SubIT::all();

@@ -12,15 +12,19 @@
 */
 
 Route::get('/', 'HomeController@home');
+//
+//Route::get('/for-performers','PerformersController@checkLogin');
+//Route::get('/for-clients','ClientsController@checkLogin');
+//
+//Route::get('/IT','ITController@show');
+//Route::get('/Marketing','MarketingController@show');
+//Route::get('/VideoNAnimation','VideoNAnimationController@show');
+//Route::get('/Design','DesignController@show');
+//Route::get('/FunNLifestyle','FunNLifestyleController@show');
+//Route::get('/business','BusinessController@show');
+//
+//Route::get('/categories/{name}','CategoriesController@category');
 
-Route::get('/for-performers','PerformersController@checkLogin');
-Route::get('/for-clients','ClientsController@checkLogin');
-
-Route::get('/IT','ITController@show');
-Route::get('/Marketing','MarketingController@show');
-Route::get('/VideoNAnimation','VideoNAnimationController@show');
-Route::get('/Design','DesignController@show');
-Route::get('/FunNLifestyle','FunNLifestyleController@show');
-Route::get('/business','BusinessController@show');
-
-Route::get('/categories/{name}','CategoriesController@category');
+Route::resources([
+    'categories' => 'CategoriesController'
+]);
