@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\SubIT;
 use Illuminate\Http\Request;
 
 class CategoriesController extends Controller
@@ -9,7 +10,8 @@ class CategoriesController extends Controller
     public function category($name){
         switch ($name){
             case 'IT':
-                return view('IT.show');
+                $data['IT'] = SubIT::all();
+                return view('IT.show',$data);
             break;
             case 'Marketing':
                 return view('Marketing.show');

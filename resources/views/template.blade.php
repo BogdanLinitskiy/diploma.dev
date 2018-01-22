@@ -26,7 +26,7 @@
     <div class="container">
         <!-- Example row of columns -->
         <div class="row">
-
+            @yield('subCategory')
             @yield('content')
 
         </div>
