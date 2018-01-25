@@ -25,6 +25,8 @@ Route::get('/', 'HomeController@home');
 //
 //Route::get('/categories/{name}','CategoriesController@category');
 
+Route::get('/categories/{name}/{sub}','SubCategoriesController@show');
+
 Route::resources([
     'categories' => 'CategoriesController'
 ]);
