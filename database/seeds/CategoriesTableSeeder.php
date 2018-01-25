@@ -20,25 +20,25 @@ class CategoriesTableSeeder extends Seeder
             ],
             [
                 'name' => 'Маркетинг',
-                'alias' => 'Marketing',
+                'alias' => 'marketing',
                 'logo' => 'https://www.buh24.com.ua/wp-content/uploads/2017/11/fitnessmarketing.jpg',
                 'created_at' => date("Y-m-d H:i:s")
             ],
             [
                 'name' => 'Видео & Анимация',
-                'alias' => 'VideoNAnimation',
+                'alias' => 'videoNAnimation',
                 'logo' => 'https://i.ytimg.com/vi/mpbxsfrEmKg/maxresdefault.jpg',
                 'created_at' => date("Y-m-d H:i:s")
             ],
             [
                 'name' => 'Дизайн',
-                'alias' => 'Design',
+                'alias' => 'design',
                 'logo' => 'http://atlant.agency/wp-content/uploads/2016/08/dis2.png',
                 'created_at' => date("Y-m-d H:i:s")
             ],
             [
                 'name' => 'Фан и Лайфстайл',
-                'alias' => 'FunNLifestyle',
+                'alias' => 'funNLifestyle',
                 'logo' => 'https://media-cdn.tripadvisor.com/media/photo-s/08/dd/87/79/hotel-paradise-park-resort.jpg',
                 'created_at' => date("Y-m-d H:i:s")
             ],

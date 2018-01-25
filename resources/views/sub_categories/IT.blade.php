@@ -13,23 +13,23 @@
     </style>
 
     <div class="subCategory" >
-    @foreach($IT as $sub)
+        @foreach($IT as $sub)
             <a href="/categories/IT/{{$sub['alias']}}"><p>{{$sub['name']}}</p></a>
-    @endforeach
+        @endforeach
     </div>
 @endsection
 
 @section('content')
     @foreach($IT as $sub)
-    <div class="col-md-6">
-        <div class="card mb-4 box-shadow">
-            <a href="/categories/IT/{{$sub['alias']}}"><img src="{{$sub['logo']}}" class=" sub card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
-            </a>
-            <div class="card-body">
-                <a href="/categories/IT/{{$sub['alias']}}"> {{$sub['name']}}</a>
+        <div class="col-md-6">
+            <div class="card mb-4 box-shadow">
+                <a href="/categories/IT/{{$sub['alias']}}"><img src="{{$sub['logo']}}" class=" sub card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+                </a>
+                <div class="card-body">
+                    <a href="/categories/IT/{{$sub['alias']}}"> {{$sub['name']}}</a>
+                </div>
             </div>
         </div>
-    </div>
     @endforeach
 @endsection
 

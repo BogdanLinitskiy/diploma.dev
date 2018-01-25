@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\SubIT;
+use App\Sub_category;
 use Illuminate\Http\Request;
 
 
@@ -13,8 +13,8 @@ class SubCategoriesController extends Controller
             case 'IT':
                 switch($sub){
                     case 'web-programming':
-                        $data['IT'] = SubIT::all();
-                        return view('sub_categories.show',$data);
+                        $data['IT'] = Sub_category::all();
+                        return view('sub_categories.IT',$data);
                 }
         }
     }

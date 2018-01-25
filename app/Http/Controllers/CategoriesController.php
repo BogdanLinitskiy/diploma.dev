@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\SubIT;
+use App\Category;
+use App\Sub_category;
 use Illuminate\Http\Request;
 
 class CategoriesController extends Controller
@@ -10,28 +11,28 @@ class CategoriesController extends Controller
     public function show($name){
         switch ($name){
             case 'IT':
-                $data['IT'] = SubIT::all();
-                return view('IT.show',$data);
+                $data['IT'] = Sub_category::all();
+                return view('categories.IT',$data);
             break;
-            case 'Marketing':
-                $data['marketing'] = SubIT::all();
-                return view('marketing.show',$data);
+            case 'marketing':
+                $data['marketing'] = Sub_category::all();
+                return view('categories.marketing',$data);
             break;
-            case 'VideoNAnimation':
-                $data['videoAnimation'] = SubIT::all();
-                return view('video_and_animation.show',$data);
+            case 'videoNAnimation':
+                $data['videoAnimation'] = Sub_category::all();
+                return view('categories.videoAnimation',$data);
                 break;
-            case 'Design':
-                $data['design'] = SubIT::all();
-                return view('design.show',$data);
+            case 'design':
+                $data['design'] = Sub_category::all();
+                return view('categories.design',$data);
                 break;
-            case 'FunNLifestyle':
-                $data['funLifestyle'] = SubIT::all();
-                return view('fun_and_lifestyle.show',$data);
+            case 'funNLifestyle':
+                $data['funLifestyle'] = Sub_category::all();
+                return view('categories.funLifestyle',$data);
                 break;
-            case 'Business':
-                $data['business'] = SubIT::all();
-                return view('business.show',$data);
+            case 'business':
+                $data['business'] = Sub_category::all();
+                return view('categories.business',$data);
                 break;
         }
     }
