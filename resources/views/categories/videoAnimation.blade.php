@@ -4,7 +4,8 @@
     <style>
         .subCategory {
             float: left;
-            margin-right: 50px;
+            width:250px;
+            margin-right: 20px;
             margin-left: 15px;
         }
         .sub{
