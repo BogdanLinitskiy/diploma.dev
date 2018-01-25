@@ -29,12 +29,10 @@
             @yield('content')
         </div>
 
-        <hr>
 
     </div> <!-- /container -->
 
 </main>
-
 @include('embed.footer')
 
 <!-- Bootstrap core JavaScript

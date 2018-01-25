@@ -15,7 +15,7 @@
 
     <div class="jumbotron">
         <div class="container">
-            <h1 class="display-4">На этой странице должны быть категории</h1>
+            {{--<h1 class="display-4"></h1>--}}
             <p> гайд как использовать сайт </p>
         </div>
     </div>
