@@ -20,9 +20,12 @@ class SubCategoriesController extends Controller
 //                }
 //        }
 //    }
-public function show($name,$sub){
-    $data['IT'] = Test::all();//заменить Тест на Контроллер
-    return view("$name.$sub",$data);
+//public function show($name,$sub){
+//    $data['IT'] = Test::all();//заменить Тест на Контроллер
+//    return view("$name.$sub",$data);
+//}
+public function show(){
+    return view('posts.test');
 }
 
 }
