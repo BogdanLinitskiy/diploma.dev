@@ -11,6 +11,9 @@
         .sub{
             height: 250px;
         }
+        .card-body{
+            padding:5px 0 0 10px;
+        }
     </style>
 
     <div class="subCategory" >
@@ -28,10 +31,10 @@
         <div class="col-md-6">
             <div class="card mb-4 box-shadow">
                 <a href="/categories/IT/{{$sub['alias']}}"><img src="{{$sub['logo']}}" class=" sub card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+                    <div class="card-body">
+                        <p> {{$sub['name']}}</p>
+                    </div>
                 </a>
-                <div class="card-body">
-                    <a href="/categories/IT/{{$sub['alias']}}"> {{$sub['name']}}</a>
-                </div>
             </div>
         </div>
         @endif

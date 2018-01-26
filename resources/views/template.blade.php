@@ -21,6 +21,7 @@
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     @yield('jumbotron')
+    @yield('carousel')
     @yield('subCategory')
     <div class="container">
         <!-- Example row of columns -->
@@ -28,10 +29,8 @@
 
             @yield('content')
         </div>
-
-
     </div> <!-- /container -->
-
+    @yield('advice')
 </main>
 @include('embed.footer')
 
