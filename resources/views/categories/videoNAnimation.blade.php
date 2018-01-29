@@ -17,7 +17,7 @@
     </style>
 
     <div class="subCategory" >
-        @foreach($videoAnimation as $sub)
+        @foreach($category as $sub)
             @if($sub['category_id']==3)
                 <a href="/categories/video-and-animation/{{$sub['alias']}}"><p>{{$sub['name']}}</p></a>
             @endif
@@ -26,7 +26,7 @@
 @endsection
 
 @section('content')
-    @foreach($videoAnimation as $sub)
+    @foreach($category as $sub)
         @if($sub['category_id']==3)
             <div class="col-md-6">
                 <div class="card mb-4 box-shadow">

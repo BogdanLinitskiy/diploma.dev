@@ -17,7 +17,7 @@
     </style>
 
     <div class="subCategory" >
-        @foreach($funLifestyle as $sub)
+        @foreach($category as $sub)
             @if($sub['category_id']==5)
                 <a href="/categories/fun-and-lifestyle/{{$sub['alias']}}"><p>{{$sub['name']}}</p></a>
             @endif
@@ -26,7 +26,7 @@
 @endsection
 
 @section('content')
-    @foreach($funLifestyle as $sub)
+    @foreach($category as $sub)
         @if($sub['category_id']==5)
             <div class="col-md-6">
                 <div class="card mb-4 box-shadow">

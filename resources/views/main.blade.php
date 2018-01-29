@@ -100,7 +100,7 @@
                     <div class="carousel-caption text-left">
                         <h1>Быстрая регистрация</h1>
                         <p>Вам необходимо всего 2 минуты для регистрации</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                        <p><a class="btn btn-lg btn-primary" href="/register" role="button">Sign up today</a></p>
                     </div>
                 </div>
             </div>

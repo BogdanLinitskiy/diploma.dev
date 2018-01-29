@@ -27,6 +27,13 @@ Route::get('/', 'HomeController@home');
 
 Route::get('/categories/{name}/{sub}','SubCategoriesController@show');
 
-Route::resources([
-    'categories' => 'CategoriesController'
-]);
+Route::get('/categories/{category}','CategoriesController@show');
+//Route::resources([
+//    'categories' => 'CategoriesController'
+//]);
+
+Route::get('/login','SessionsController@create')->name('login');
+Route::post('/sessions','SessionsController@store');
+Route::get('/logout','SessionsController@destroy');
+Route::get('/register','RegistrationController@create');
+Route::post('/register','RegistrationController@store');
