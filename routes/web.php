@@ -37,3 +37,6 @@ Route::post('/sessions','SessionsController@store');
 Route::get('/logout','SessionsController@destroy');
 Route::get('/register','RegistrationController@create');
 Route::post('/register','RegistrationController@store');
+
+/* test route for seller_profile*/
+Route::get('/seller_profile','SessionsController@show');

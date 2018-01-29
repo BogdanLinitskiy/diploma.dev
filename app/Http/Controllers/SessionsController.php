@@ -26,4 +26,9 @@ class SessionsController extends Controller
         auth()->logout();
         return redirect('/');
     }
+
+    public function show()
+    {
+        return view('users.seller_profile');
+    }
 }

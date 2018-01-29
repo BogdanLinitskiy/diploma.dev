@@ -17,27 +17,23 @@
     </style>
 
     <div class="subCategory" >
-        @foreach($category as $sub)
-            @if($sub['category_id']==1)
-            <a href="/categories/IT/{{$sub['alias']}}"><p>{{$sub['name']}}</p></a>
-            @endif
+        @foreach($category->sub_categories as $sub)
+            <a href="/categories/{{$category['alias']}}/{{$sub['alias']}}"><p>{{$sub['name']}}</p></a>
         @endforeach
     </div>
 @endsection
 
 @section('content')
-    @foreach($category as $sub)
-        @if($sub['category_id']==1)
+    @foreach($category->sub_categories as $sub)
         <div class="col-md-6">
             <div class="card mb-4 box-shadow">
-                <a href="/categories/IT/{{$sub['alias']}}"><img src="{{$sub['logo']}}" class=" sub card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+                <a href="/categories/{{$category['alias']}}/{{$sub['alias']}}"><img src="{{$sub['logo']}}" class=" sub card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
                     <div class="card-body">
                         <p> {{$sub['name']}}</p>
                     </div>
                 </a>
             </div>
         </div>
-        @endif
     @endforeach
 @endsection
 
@@ -45,8 +41,7 @@
 
     <div class="jumbotron" align="center">
         <div class="container">
-            {{--<h1 class="display-4">{{ $post['title'] }}</h1>--}}
-            <h1>IT</h1>
+            <h1>{{$category['name']}}</h1>
         </div>
     </div>
 

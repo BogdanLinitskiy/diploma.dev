@@ -13,23 +13,25 @@
             <li class="nav-item active">
                 <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
             </li>
-            @if(Auth::check())
-                <li class="nav-item">
-                    <a class="nav-link" href="#">{{Auth::user()->name}}</a>
-                </li>
+        @if(Auth::check())
 
-                <li class="nav-item">
-                    <a class="nav-link" href="/logout">Logout</a>
-                </li>
-            @else
-                <li class="nav-item">
-                    <a class="nav-link" href="/login">Login</a>
-                </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/seller_profile">{{Auth::user()->name}}</a>
+            </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="/register">Registration</a>
-                </li>
-            @endif
+            <li class="nav-item">
+                <a class="nav-link" href="/logout">Logout</a>
+            </li>
+        @else
+
+            <li class="nav-item">
+                <a class="nav-link" href="/login">Login</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/register">Registration</a>
+            </li>
+        @endif
 
 
         </ul>
