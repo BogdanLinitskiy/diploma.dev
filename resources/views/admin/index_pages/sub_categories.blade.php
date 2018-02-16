@@ -4,9 +4,9 @@
 
     <div class="div-create col-md-12">
         <h1>Sub categories</h1>
-        <a href="/admin/sub_categories/create">
-            <button type="button" class="create btn btn-sm btn-outline-secondary">Create new sub category</button>
-        </a>
+        {{--<a href="/admin/sub_categories/create">--}}
+            {{--<button type="button" class="create btn btn-sm btn-outline-secondary">Create new sub category</button>--}}
+        {{--</a>--}}
     </div>
 
     <table class="table">

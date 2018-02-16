@@ -15,14 +15,6 @@
             <li class="nav-item">
                 <a class="nav-link" href="/admin/sub_categories">Sub categories</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/admin/orders">Orders</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/admin/pages">Articles</a>
-            </li>
-
-
         </ul>
         <div class="nav-item  col-md-2 ">
             <ul class="navbar-nav mr-auto">

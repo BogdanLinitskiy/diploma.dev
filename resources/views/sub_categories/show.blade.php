@@ -2,15 +2,18 @@
 
 @section('content')
 
-    <div class="col-md-12">
-        <h2>{{ $sub_category['name'] }}</h2>
-        {{--@foreach($product->thumbnails as $thumb)--}}
-            {{--<img src="/uploads/products/{{$thumb->name}}" alt="product image" class="img-thumbnail" width="400px" height="400px">--}}
-        {{--@endforeach--}}
-        <p> {{ $sub_category['alias'] }} </p>
-        <p> {{ $sub_category['description'] }} </p>
-        <img src="{{$sub_category['logo']}}">
-        <p><a class="btn btn-primary" href="{{url()->previous()}}" role="button">Back</a></p>
+    <div class="col-md-4">
+        <div class="card mb-4 box-shadow">
+            <img class="card-img-top" src="{{$sub_category['logo']}}" alt="Card image cap">
+            <div class="card-body">
+                <h2 class="card-text">{{ $sub_category['alias'] }}</h2>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                        <a href="{{url()->previous()}}"><button type="button" class="btn btn-sm btn-outline-secondary">Back</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 @endsection
@@ -19,7 +22,7 @@
 
     <div class="jumbotron">
         <div class="container">
-            <h1 class="display-4"> {{ $sub_category['title'] }} </h1>
+            <h1 class="display-4"> {{ $sub_category['name'] }} </h1>
         </div>
     </div>
 
