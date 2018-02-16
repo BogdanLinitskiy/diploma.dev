@@ -12,25 +12,17 @@
 */
 
 Route::get('/', 'HomeController@home');
-//
-//Route::get('/for-performers','PerformersController@checkLogin');
-//Route::get('/for-clients','ClientsController@checkLogin');
-//
-//Route::get('/IT','ITController@show');
-//Route::get('/Marketing','MarketingController@show');
-//Route::get('/VideoNAnimation','VideoNAnimationController@show');
-//Route::get('/Design','DesignController@show');
-//Route::get('/FunNLifestyle','FunNLifestyleController@show');
-//Route::get('/business','BusinessController@show');
-//
-//Route::get('/categories/{name}','CategoriesController@category');
+
+Route::resources([
+    'admin/categories' => 'Admin\CategoriesController',
+    'admin/sub_categories' => 'Admin\SubCategoriesController'
+]);
+Route::get('/admin/categories/{category}/delete','Admin\CategoriesController@delete');
+
 
 Route::get('/categories/{name}/{sub}','SubCategoriesController@show');
 
 Route::get('/categories/{category}','CategoriesController@show');
-//Route::resources([
-//    'categories' => 'CategoriesController'
-//]);
 
 Route::get('/login','SessionsController@create')->name('login');
 Route::post('/sessions','SessionsController@store');
@@ -40,3 +32,9 @@ Route::post('/register','RegistrationController@store');
 
 /* test route for seller_profile*/
 Route::get('/seller_profile','SessionsController@show');
+
+//Admin Auth Middleware
+Route::get('/admin/','Admin\MainController@index');
+Route::get('/admin/login',['as' => 'admin.login','uses' => 'Admin\LoginController@showLoginForm']);
+Route::post('/admin/login',['uses' => 'Admin\LoginController@login']);
+Route::get('/admin/logout',['as' => 'admin.logout','uses' => 'Admin\LoginController@logout']);

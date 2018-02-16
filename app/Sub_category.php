@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Sub_category extends Model
 {
+    protected $fillable = ['name','alias','logo','category_id'];
+
     public function getRouteKeyName()
     {
         return 'alias';

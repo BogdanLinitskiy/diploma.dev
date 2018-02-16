@@ -1,10 +1,8 @@
-@extends('template')
+@extends(Auth::guard('admin')->user() ? 'admin_template' : 'template')
 
 @section('subCategory')
     <style>
         .subCategory {
-            float: left;
-            width:250px;
             margin-right: 20px;
             margin-left: 15px;
         }
@@ -17,9 +15,12 @@
     </style>
 
     <div class="subCategory" >
-        @foreach($category->sub_categories as $sub)
-            <a href="/categories/{{$category['alias']}}/{{$sub['alias']}}"><p>{{$sub['name']}}</p></a>
-        @endforeach
+        <aside class="float-md-left">
+            @foreach($category->sub_categories as $sub)
+                <a href="/categories/{{$category['alias']}}/{{$sub['alias']}}"><p>{{$sub['name']}}</p></a>
+            @endforeach
+        </aside>
+
     </div>
 @endsection
 
