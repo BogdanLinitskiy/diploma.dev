@@ -5,7 +5,7 @@
     <div class="div-create col-md-12">
         <h1>Last added categories</h1>
         <a href="/admin/categories/create">
-            <button type="button" class="create btn btn-sm btn-outline-secondary">Create new product category</button>
+            <button type="button" class="create btn btn-sm btn-outline-secondary">Create new category</button>
         </a>
     </div>
 

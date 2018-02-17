@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="/css/footer.css">
 <hr>
 <div class="row">
     <div class="col-sm-3">
@@ -44,19 +45,7 @@
         </div>
     </div>
 </div>
-<style>
-    .logos a img{
-        width: 25px;
-        height: 25px;
-        margin:10px;
-    }
-    footer{
-        padding-bottom: 25px;
-    }
-    span{
-        font-size: 14px;
-    }
-</style>
+
 <footer class="container">
 <hr>
     <div class="logos"style="float:right">
@@ -64,6 +53,5 @@
         <a href="https://twitter.com/dreadisfat"><img src="https://cdn3.iconfinder.com/data/icons/social-icons-5/606/Twitter.png"></a>
         <a href="https://www.vk.com/animebogdan"><img src="https://www.shareicon.net/download/2016/11/03/849431_social_512x512.png"></a>
     </div>
-    <p>Добавить в footer категории, About, Поддержка </p>
     <span>© Bogdan Linitskiy 2018</span>
 </footer>

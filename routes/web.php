@@ -31,7 +31,8 @@ Route::get('/register','RegistrationController@create');
 Route::post('/register','RegistrationController@store');
 
 /* test route for seller_profile*/
-Route::get('/seller_profile','SessionsController@show');
+Route::get('/seller_profile/','UsersController@show');
+Route::post('/seller_profile','UsersController@store');
 
 //Admin Auth Middleware
 Route::get('/admin/','Admin\MainController@index');

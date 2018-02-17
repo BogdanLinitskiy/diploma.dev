@@ -27,8 +27,4 @@ class SessionsController extends Controller
         return redirect('/');
     }
 
-    public function show()
-    {
-        return view('users.seller_profile');
-    }
 }

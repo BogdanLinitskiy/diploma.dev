@@ -1,57 +1,7 @@
 @extends('template')
 
 @section('content')
-    <style>
-        #main{
-            margin:75px 0 0 0;
-            height: 306px;
-        }
-        img{
-            width: 230px;
-            height: 140px;
-        }
-        #user_logo{
-            width: 35px;
-            height: 35px;
-            float:left;
-            border-radius: 160px 160px 160px 160px;
-        }
-        #user{
-            padding-top: 3px;
-            padding-left:10px;
-            height: 41px;
-        }
-        span{
-            padding-left: 10px;
-            float:left;
-        }
-        #onSiteSince{
-            margin-top: -8px;
-            color:#8c8c8c;
-        }
-        .intro{
-            width:230px;
-            height: 81px;
-            padding:10px 0 10px 10px;
-            font-family: 'Raleway', sans-serif;
-            font-size: 15px;
-        }
-        .rating{
-            margin-top: -15px;
-        }
-        .price{
-            border:1px solid lightgray;
-            height: 42px;
-            padding:8px;
-        }
-        .price span{
-            margin-right: 10px;
-            float:right;
-        }
-        .price a{
-            float:left;
-        }
-    </style>
+<link rel="stylesheet" href="/css/post.css">
     <div id="main" >
         <div class="container">
             <div class="card-deck mb-3 text-center">
