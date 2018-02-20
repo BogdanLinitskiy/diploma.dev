@@ -67,26 +67,7 @@
 @endsection
 
 @section('carousel')
-    <style>
-        .carousel {
-            margin-bottom: 4rem;
-        }
-        .carousel-caption {
-            bottom: 3rem;
-            z-index: 10;
-        }
-        .carousel-item {
-            height: 32rem;
-            background-color: #34495e;
-        }
-        .carousel-item > img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            min-width: 100%;
-            height: 32rem;
-        }
-    </style>
+<link rel="stylesheet" href="/css/carousel.css">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
