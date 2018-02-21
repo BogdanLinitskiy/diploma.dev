@@ -20,6 +20,7 @@ class CreateSellerProfileTable extends Migration
             $table->string('skills')->nullable();
             $table->string('education')->nullable();
             $table->text('description')->nullable();
+            $table->integer('user_id');
             $table->timestamps();
         });
     }

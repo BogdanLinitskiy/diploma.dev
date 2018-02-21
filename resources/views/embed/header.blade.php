@@ -2,6 +2,7 @@
     nav{
         background-color: #34495e;
     }
+
 </style>
 
 <link rel="stylesheet" href="/css/login_drop.css">
@@ -18,9 +19,17 @@
         </ul>
         <ul class="navbar-nav navbar-right">
         @if(Auth::check())
-
             <li class="nav-item">
-                <a class="nav-link" href="/seller_profile">{{Auth::user()->name}}</a>
+                <div class="dropdown ">
+                    <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"><b>{{Auth::user()->name}}</b><span class="caret"></span></a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="/seller_profile">Анкета</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <hr>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
             </li>
 
             <li class="nav-item">
@@ -29,8 +38,8 @@
 
         @else
             <li class="dropdown">
-                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
-                <ul id="login-dp" class="dropdown-menu">
+                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" ><b>Login</b> <span class="caret"></span></a>
+                <ul id="login-dp" class="dropdown-menu dropdown-menu-right">
                     <li>
                         <div class="row">
                             <div class="col-md-12">
@@ -62,17 +71,12 @@
                                 </form>
                             </div>
                             <div class="bottom text-center">
-                                New here ? <a href="#"><b>Join Us</b></a>
+                                New here ? <a href="/register"><b>Join Us</b></a>
                             </div>
                         </div>
                     </li>
                 </ul>
             </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="/register">Registration</a>
-            </li>
-
         @endif
         </ul>
     </div>

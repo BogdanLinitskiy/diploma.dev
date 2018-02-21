@@ -14,10 +14,14 @@
 Route::get('/', 'HomeController@home');
 
 Route::resources([
-    'admin/categories' => 'Admin\CategoriesController',
-    'admin/sub_categories' => 'Admin\SubCategoriesController'
+    '/admin/categories' => 'Admin\CategoriesController',
+    '/admin/sub_categories' => 'Admin\SubCategoriesController',
+    '/seller_profile' => 'UsersController'
 ]);
+Route::post('/seller_profile/{seller_profile}','UsersController@update');
+
 Route::get('/admin/categories/{category}/delete','Admin\CategoriesController@delete');
+Route::get('/seller_profile/{seller_profile}/delete','UsersController@delete');
 
 
 Route::get('/categories/{name}/{sub}','SubCategoriesController@show');
@@ -31,8 +35,9 @@ Route::get('/register','RegistrationController@create');
 Route::post('/register','RegistrationController@store');
 
 /* test route for seller_profile*/
-Route::get('/seller_profile/','UsersController@show');
-Route::post('/seller_profile','UsersController@store');
+//Route::get('/seller_profile','UsersController@show');
+//Route::post('/seller_profile','UsersController@store');
+//Route::get('/seller_profile/{seller_profile}/edit','UsersController@edit');
 
 //Admin Auth Middleware
 Route::get('/admin/','Admin\MainController@index');
