@@ -16,12 +16,15 @@ Route::get('/', 'HomeController@home');
 Route::resources([
     '/admin/categories' => 'Admin\CategoriesController',
     '/admin/sub_categories' => 'Admin\SubCategoriesController',
-    '/seller_profile' => 'UsersController'
+    '/seller_profile' => 'UsersController',
+    '/posts' => 'PostsController'
 ]);
 Route::post('/seller_profile/{seller_profile}','UsersController@update');
+Route::post('/posts/{post}','PostsController@update');
 
 Route::get('/admin/categories/{category}/delete','Admin\CategoriesController@delete');
 Route::get('/seller_profile/{seller_profile}/delete','UsersController@delete');
+Route::get('/posts/{post}/delete','PostsController@delete');
 
 
 Route::get('/categories/{name}/{sub}','SubCategoriesController@show');

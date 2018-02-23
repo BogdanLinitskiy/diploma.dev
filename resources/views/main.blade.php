@@ -80,8 +80,8 @@
                 <div class="container">
                     <div class="carousel-caption text-left">
                         <h1>Быстрая регистрация</h1>
-                        <p>Вам необходимо всего 2 минуты для регистрации</p>
-                        <p><a class="btn btn-lg btn-primary" href="/register" role="button">Sign up today</a></p>
+                        <p>Вам необходимо всего 1 минута для регистрации</p>
+                        <p><a class="btn btn-lg btn-primary" href="/register" role="button">Зарегестрироваться</a></p>
                     </div>
                 </div>
             </div>
@@ -91,7 +91,7 @@
                     <div class="carousel-caption">
                         <h1>Создайте свою анкету</h1>
                         <p>Создать и заполнить анкету не составит труда</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                        <p><a class="btn btn-lg btn-primary" href="/seller_profile" role="button">Создать анкету</a></p>
                     </div>
                 </div>
             </div>

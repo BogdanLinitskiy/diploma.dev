@@ -61,6 +61,7 @@ class UsersController extends Controller
                 return view('seller_profile.edit', compact('seller'));
             }
         }
+        return redirect('/seller_profile');
     }
 
     public function update(Seller_profile $seller_profile)

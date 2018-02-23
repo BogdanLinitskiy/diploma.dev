@@ -29,7 +29,7 @@
             </div>
             <div class="form-group col-md-6" >
                 <label for="languages"></label>
-                <input type="text" class="form-control" name="languages" id="languages" placeholder="Например, Украинский - Носитель">
+                <input type="text" class="form-control" name="languages" id="languages" maxlength="100" placeholder="Например, Украинский - Носитель">
             </div>
         </div>
         <div class="form-row" id="div1">
@@ -40,7 +40,7 @@
             </div>
             <div class="form-group col-md-6" >
                 <label for="skills"></label>
-                <input type="text" class="form-control" name="skills" id="skills" placeholder="Например, вы делайте хороший дизайн логотипов">
+                <input type="text" class="form-control" name="skills" id="skills" maxlength="100" placeholder="Например, вы делайте хороший дизайн логотипов">
             </div>
         </div>
         <div class="form-row" id="div1">
@@ -51,7 +51,7 @@
             </div>
             <div class="form-group col-md-6" >
                 <label for="education"></label>
-                <input type="text" class="form-control" name="education" id="education" placeholder="Например, ОНПУ. Кафедра компьютерных интеллектульных систем и сетей">
+                <input type="text" class="form-control" name="education" id="education" maxlength="100" placeholder="Например, ОНПУ. Кафедра компьютерных интеллектульных систем и сетей">
             </div>
         </div>
         <div class="form-row" id="div1">
@@ -73,7 +73,7 @@
             </div>
             <div class="form-group col-md-7" >
                 <label for="description"></label>
-                <textarea class="form-control" name="description" id="description" placeholder="Пожалуйста, расскажите нам о ваших увлечениях, дополнительном опыте, или что либо что вы хотите добавить. (Должно быть не более 500 символов)"></textarea>
+                <textarea class="form-control" name="description" id="description" maxlength="500" placeholder="Пожалуйста, расскажите нам о ваших увлечениях, дополнительном опыте, или что либо что вы хотите добавить. (Должно быть не более 500 символов)"></textarea>
             </div>
         </div>
         <button type="submit" class="btn btn-success btn-lg">Продолжить и создать вашу первую услугу</button>
@@ -85,7 +85,7 @@
 @section('jumbotron')
     <div class="jumbotron">
         <div class="container col-md-12">
-            <h1 class="display-4 text-center"> Создание анкеты </h1>
+            <h1 class="display-4 text-center"> Настройки профиля </h1>
         </div>
     </div>
 @endsection

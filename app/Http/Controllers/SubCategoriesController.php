@@ -11,7 +11,7 @@ class SubCategoriesController extends Controller
 {
     public function show()
     {
-        return view('posts.test');
+        return view('posts.index');
     }
 
 }

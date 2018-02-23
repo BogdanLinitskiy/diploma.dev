@@ -3,7 +3,7 @@
 @section('content')
 
     <div class="col-md-12">
-        <form action="/seller_profile/{{$seller_profile['id']}}" method="post" class="form-horizontal">
+        <form action="/posts/{{$post['id']}}" method="post" class="form-horizontal">
             @include('embed.errors')
 
             {{csrf_field()}}
@@ -15,8 +15,8 @@
             </div>
 
             <div class="form-group">
-                <button class="btn btn-danger">Delete</button>
-                <p><a class="btn btn-primary" href="/seller_profile" role="button">Назад</a></p>
+                <button class="btn btn-danger">Удалить</button>
+                <p><a class="btn btn-primary" href="/posts" role="button">Назад</a></p>
             </div>
 
         </form>
@@ -27,7 +27,7 @@
 @section('jumbotron')
     <div class="jumbotron">
         <div class="container">
-            <h1 class="display-4">Удаление настроек профиля </h1>
+            <h1 class="display-4">Удаление анкеты </h1>
         </div>
     </div>
 

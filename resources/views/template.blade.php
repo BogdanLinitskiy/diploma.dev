@@ -15,7 +15,12 @@
 </head>
 
 <body>
-
+<style>
+    a{
+        text-decoration: none !important;
+        color:#595959;
+    }
+</style>
 @include('embed.header')
 <main role="main">
 
@@ -26,7 +31,6 @@
     <div class="container">
         <!-- Example row of columns -->
         <div class="row">
-
             @yield('content')
         </div>
     </div> <!-- /container -->

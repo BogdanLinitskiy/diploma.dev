@@ -1,0 +1,14 @@
+dl{
+    margin-left: 50px !important;
+}
+h4 {
+    font-family: Arial,Courier, Monaco, monospace ;
+    font-style: normal;
+    font-weight: 700;
+}
+dt{
+    height: 100px;
+}
+.desc{
+    height:150px;
+}

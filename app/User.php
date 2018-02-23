@@ -29,6 +29,11 @@ class User extends Authenticatable
 
     public function seller_profiles()
     {
-        $this->hasMany(Seller_profile::class);
+        return $this->hasMany(Seller_profile::class);
+    }
+
+    public function review()
+    {
+        return $this->hasMany(Review::class);
     }
 }
