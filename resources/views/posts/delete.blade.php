@@ -27,8 +27,7 @@
 @section('jumbotron')
     <div class="jumbotron">
         <div class="container">
-            <h1 class="display-4">Удаление анкеты </h1>
+            <h1 class="display-4 text-center">Удаление анкеты </h1>
         </div>
     </div>
-
 @endsection

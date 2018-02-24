@@ -24,7 +24,7 @@ class PostsController extends Controller
                 return $this->create();
             }
         }
-        return view('posts.index',compact('post'));
+        return view('posts.user_posts',compact('posts'));
     }
 
     public function show(Post $post)

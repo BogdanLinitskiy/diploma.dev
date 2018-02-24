@@ -5,7 +5,7 @@
     <div id="main">
         <div class="container">
             <div class="row">
-                @foreach($sub_category->posts as $post)
+                @foreach($posts as $post)
                     <div class="card-deck mb-3 text-center" >
                         <div class="card mb-3 box-shadow">
                             <div class="card-img-top">
@@ -34,12 +34,15 @@
             </div>
         </div>
     </div>
+    <div class="col-md-12 text-center">
+        <a href="/posts/create"><button class="btn btn-primary text-center">Создать услугу</button></a>
+    </div>
 @endsection
 
 @section('jumbotron')
     <div class="jumbotron">
         <div class="container">
-            <h1 class="display-4 text-center">Все услуги </h1>
+            <h1 class="display-4 text-center">Ваши услуги</h1>
         </div>
     </div>
 

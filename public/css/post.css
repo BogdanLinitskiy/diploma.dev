@@ -1,6 +1,6 @@
 #main{
-    margin:75px 0 0 0;
-    height: 306px;
+    /*margin:75px 0 0 0;*/
+    /*height: 306px;*/
 }
 img{
     width: 230px;
@@ -46,4 +46,7 @@ span{
 }
 .price a{
     float:left;
+}
+.card-deck{
+    margin-left: 20px;
 }

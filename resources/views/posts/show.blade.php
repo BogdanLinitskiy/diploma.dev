@@ -15,8 +15,10 @@
 
             </dl>
             <div class="col-md-12 text-center">
+                @if(Auth::user()->id == $post['user_id'])
                 <a href="/posts/{{$post['id']}}/edit"><button class="btn btn-primary">Изменить анкету</button></a>
                 <a href="/posts/{{$post['id']}}/delete"><button class="btn btn-danger">Удалить анкету</button></a>
+                @endif
             </div>
         </div>
 @endsection
@@ -24,7 +26,7 @@
 @section('jumbotron')
     <div class="jumbotron">
         <div class="container text-center">
-            <h1 class="display-4">{{$post['title']}}</h1>
+            <h1 class="display-4 text-center">{{$post['title']}}</h1>
         </div>
     </div>
 @endsection

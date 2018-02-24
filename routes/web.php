@@ -27,8 +27,7 @@ Route::get('/seller_profile/{seller_profile}/delete','UsersController@delete');
 Route::get('/posts/{post}/delete','PostsController@delete');
 
 
-Route::get('/categories/{name}/{sub}','SubCategoriesController@show');
-
+Route::get('/categories/{category}/{sub_category}','SubCategoriesController@show');
 Route::get('/categories/{category}','CategoriesController@show');
 
 Route::get('/login','SessionsController@create')->name('login');
