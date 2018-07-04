@@ -4,7 +4,7 @@
 @section('jumbotron')
     <div class="jumbotron">
         <div class="container">
-            <h1 class="display-4">Registration</h1>
+            <h1 class="display-4 text-center">Регистрация</h1>
         </div>
     </div>
 @endsection
@@ -17,26 +17,26 @@
 
             @include('embed.errors')
             <div class="form-group">
-                <label for="name">Full name:</label>
+                <label for="name">Логин:</label>
                 <input type="text" class="form-control" id="name" name="name">
             </div>
             <div class="form-group">
-                <label for="email">Email address:</label>
+                <label for="email">E-mail:</label>
                 <input type="email" class="form-control" id="email" name="email">
             </div>
 
             <div class="form-group">
-                <label for="password">Password:</label>
+                <label for="password">Пароль:</label>
                 <input type="password" class="form-control" id="password" name="password">
             </div>
 
             <div class="form-group">
-                <label for="password_confirmation">Password confirmation:</label>
+                <label for="password_confirmation">Подтверждение пароля:</label>
                 <input type="password" class="form-control" id="password_confirmation" name="password_confirmation">
             </div>
 
             <div class="form-group">
-                <button class="btn btn-primary" type="submit">Register</button>
+                <button class="btn btn-primary" type="submit">Зарегестрироваться</button>
             </div>
         </form>
     </div>

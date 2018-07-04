@@ -25,8 +25,8 @@
             </div>
 
             <div class="form-group">
-                <button class="btn btn-default">Update</button>
-                <p><a class="btn btn-primary" href="/admin" role="button">Back to the home page</a></p>
+                <button class="btn btn-default">Обновить</button>
+                <p><a class="btn btn-primary" href="/admin" role="button">На главную</a></p>
             </div>
         </form>
     </div>
@@ -35,7 +35,7 @@
 @section('jumbotron')
     <div class="jumbotron">
         <div class="container">
-            <h1 class="display-4">Editing {{$category->name}} category</h1>
+            <h1 class="display-4">Изменение категории "{{$category->name}}"</h1>
         </div>
     </div>
 

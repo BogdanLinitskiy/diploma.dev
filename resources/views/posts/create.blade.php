@@ -11,9 +11,13 @@
                 <label for="title">Заголовок: </label>
                 <input type ="text" class="form-control" id="title" name="title">
             </div>
+            <div class="form-group col-md-8">
+                <label for="title">Изображение задания: </label>
+                <input type ="file" class="form-control" id="title" name="title">
+            </div>
 
             <div class="form-group col-md-8">
-                <label for="about">О посте: </label>
+                <label for="about">О задании: </label>
                 <textarea class="form-control" id="about" name="about" style="resize: none"></textarea>
             </div>
 
@@ -68,7 +72,7 @@
 @section('jumbotron')
     <div class="jumbotron">
         <div class="container col-md-12">
-            <h1 class="display-4 text-center"> Создание анкеты </h1>
+            <h1 class="display-4 text-center"> Создание задания </h1>
         </div>
     </div>
 @endsection

@@ -11,5 +11,4 @@ class HomeController extends Controller
         $data['categories'] = Category::all();
         return view('main',$data);
     }
-
 }

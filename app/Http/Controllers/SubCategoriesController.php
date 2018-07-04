@@ -15,5 +15,4 @@ class SubCategoriesController extends Controller
     {
         return view('posts.index',compact('sub_category'));
     }
-
 }

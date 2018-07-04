@@ -3,9 +3,9 @@
 @section('content')
 
     <div class="div-create col-md-12">
-        <h1>Last added categories</h1>
+        <h1>Последние добавленные категории</h1>
         <a href="/admin/categories/create">
-            <button type="button" class="create btn btn-sm btn-outline-secondary">Create new category</button>
+            <button type="button" class="create btn btn-sm btn-outline-secondary"> Создать новую категорию</button>
         </a>
     </div>
 
@@ -31,7 +31,7 @@
 
     <div class="div-create col-md-12">
         <hr>
-        <h1>Last added sub categories</h1>
+        <h1>Последние добавленные подкатегории</h1>
     </div>
 
     @foreach($last_added['sub_categories'] as $sub_category)
@@ -121,7 +121,7 @@
 
     <div class="jumbotron">
         <div class="container">
-            <h1 class="display-4" align="center">Admin page</h1>
+            <h1 class="display-4" align="center">Администраторская панель</h1>
         </div>
     </div>
 

@@ -10,7 +10,7 @@
                         <div class="card mb-3 box-shadow">
                             <div class="card-img-top">
                                 <a href="/posts/{{$post['id']}}">
-                                    <img class="card-img-top" src="http://s3-us-west-2.amazonaws.com/nichegamer/wp-content/uploads/2017/12/08112436/berserk-12-08-17-1.jpg" alt="Изображение анкеті">
+                                    <img class="card-img-top" style="width:232px" src="http://palitra-school.ru/assets/portfolio/web-design.jpg" alt="Изображение анкеты">
                                 </a>
                             </div>
                             <div class="card-body" id="user">

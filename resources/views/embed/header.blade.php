@@ -10,14 +10,14 @@
 
 <link rel="stylesheet" href="/css/login_drop.css">
 <nav  class="navbar navbar-expand-md navbar-dark fixed-top ">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#">Навигация</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/">Домой <span class="sr-only">(current)</span></a>
             </li>
         </ul>
         <ul class="navbar-nav navbar-right">
@@ -42,12 +42,12 @@
                     <li>
                         <div class="row">
                             <div class="col-md-12">
-                                Войти с помощью
-                                <div class="social-buttons">
+                                <!-- Войти с помощью -->
+                                <!-- <div class="social-buttons">
                                     <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
                                     <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
-                                </div>
-                                или
+                                </div> -->
+                                <!-- или -->
                                 <form class="form" role="form" method="post" action="/sessions" accept-charset="UTF-8" id="login-nav">
                                     {{csrf_field()}}
                                     <div class="form-group">
